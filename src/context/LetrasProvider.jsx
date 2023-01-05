@@ -19,7 +19,7 @@ const LetrasProvider = ({children}) => {
                 }
             };
 
-            const url = `https://lyrics-plus.p.rapidapi.com/lyrics/${artista}/${cancion}`
+            const url = `https://lyrics-plus.p.rapidapi.com/lyrics/${cancion}/${artista}`
             const {data} = await axios(url,options)
             setLetra(data.lyrics)
             setAlerta('')
